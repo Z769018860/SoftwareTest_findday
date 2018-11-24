@@ -1,0 +1,164 @@
+[2]2 1 2300 reference:The Day is Tuesday result:The Day is Thursday.
+[3]3 1 2300 reference:The Day is Wednesday result:The Day is Friday.
+[4]4 1 2300 reference:The Day is Thursday result:The Day is Saturday.
+[6]6 1 2300 reference:The Day is Saturday result:The Day is Monday.
+[9]9 1 2300 reference:The Day is Tuesday result:The Day is Thursday.
+[10]10 1 2300 reference:The Day is Wednesday result:The Day is Friday.
+[11]11 1 2300 reference:The Day is Thursday result:The Day is Saturday.
+[13]13 1 2300 reference:The Day is Saturday result:The Day is Monday.
+[16]16 1 2300 reference:The Day is Tuesday result:The Day is Thursday.
+[17]17 1 2300 reference:The Day is Wednesday result:The Day is Friday.
+[18]18 1 2300 reference:The Day is Thursday result:The Day is Saturday.
+[20]20 1 2300 reference:The Day is Saturday result:The Day is Monday.
+[23]23 1 2300 reference:The Day is Tuesday result:The Day is Thursday.
+[24]24 1 2300 reference:The Day is Wednesday result:The Day is Friday.
+[25]25 1 2300 reference:The Day is Thursday result:The Day is Saturday.
+[27]27 1 2300 reference:The Day is Saturday result:The Day is Monday.
+[30]30 1 2300 reference:The Day is Tuesday result:The Day is Thursday.
+[31]31 1 2300 reference:The Day is Wednesday result:The Day is Friday.
+[32]1 2 2300 reference:The Day is Thursday result:The Day is Saturday.
+[34]3 2 2300 reference:The Day is Saturday result:The Day is Monday.
+[37]6 2 2300 reference:The Day is Tuesday result:The Day is Thursday.
+[38]7 2 2300 reference:The Day is Wednesday result:The Day is Friday.
+[39]8 2 2300 reference:The Day is Thursday result:The Day is Saturday.
+[41]10 2 2300 reference:The Day is Saturday result:The Day is Monday.
+[44]13 2 2300 reference:The Day is Tuesday result:The Day is Thursday.
+[45]14 2 2300 reference:The Day is Wednesday result:The Day is Friday.
+[46]15 2 2300 reference:The Day is Thursday result:The Day is Saturday.
+[48]17 2 2300 reference:The Day is Saturday result:The Day is Monday.
+[51]20 2 2300 reference:The Day is Tuesday result:The Day is Thursday.
+[52]21 2 2300 reference:The Day is Wednesday result:The Day is Friday.
+[53]22 2 2300 reference:The Day is Thursday result:The Day is Saturday.
+[55]24 2 2300 reference:The Day is Saturday result:The Day is Monday.
+[58]27 2 2300 reference:The Day is Tuesday result:The Day is Thursday.
+[59]28 2 2300 reference:The Day is Wednesday result:The Day is Friday.
+[60]1 3 2300 reference:The Day is Thursday result:The Day is Sunday.
+[65]6 3 2300 reference:The Day is Tuesday result:The Day is Friday.
+[66]7 3 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[67]8 3 2300 reference:The Day is Thursday result:The Day is Sunday.
+[72]13 3 2300 reference:The Day is Tuesday result:The Day is Friday.
+[73]14 3 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[74]15 3 2300 reference:The Day is Thursday result:The Day is Sunday.
+[79]20 3 2300 reference:The Day is Tuesday result:The Day is Friday.
+[80]21 3 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[81]22 3 2300 reference:The Day is Thursday result:The Day is Sunday.
+[86]27 3 2300 reference:The Day is Tuesday result:The Day is Friday.
+[87]28 3 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[88]29 3 2300 reference:The Day is Thursday result:The Day is Sunday.
+[93]3 4 2300 reference:The Day is Tuesday result:The Day is Friday.
+[94]4 4 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[95]5 4 2300 reference:The Day is Thursday result:The Day is Sunday.
+[100]10 4 2300 reference:The Day is Tuesday result:The Day is Friday.
+[101]11 4 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[102]12 4 2300 reference:The Day is Thursday result:The Day is Sunday.
+[107]17 4 2300 reference:The Day is Tuesday result:The Day is Friday.
+[108]18 4 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[109]19 4 2300 reference:The Day is Thursday result:The Day is Sunday.
+[114]24 4 2300 reference:The Day is Tuesday result:The Day is Friday.
+[115]25 4 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[116]26 4 2300 reference:The Day is Thursday result:The Day is Sunday.
+[121]1 5 2300 reference:The Day is Tuesday result:The Day is Friday.
+[122]2 5 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[123]3 5 2300 reference:The Day is Thursday result:The Day is Sunday.
+[128]8 5 2300 reference:The Day is Tuesday result:The Day is Friday.
+[129]9 5 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[130]10 5 2300 reference:The Day is Thursday result:The Day is Sunday.
+[135]15 5 2300 reference:The Day is Tuesday result:The Day is Friday.
+[136]16 5 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[137]17 5 2300 reference:The Day is Thursday result:The Day is Sunday.
+[142]22 5 2300 reference:The Day is Tuesday result:The Day is Friday.
+[143]23 5 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[144]24 5 2300 reference:The Day is Thursday result:The Day is Sunday.
+[149]29 5 2300 reference:The Day is Tuesday result:The Day is Friday.
+[150]30 5 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[151]31 5 2300 reference:The Day is Thursday result:The Day is Sunday.
+[156]5 6 2300 reference:The Day is Tuesday result:The Day is Friday.
+[157]6 6 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[158]7 6 2300 reference:The Day is Thursday result:The Day is Sunday.
+[163]12 6 2300 reference:The Day is Tuesday result:The Day is Friday.
+[164]13 6 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[165]14 6 2300 reference:The Day is Thursday result:The Day is Sunday.
+[170]19 6 2300 reference:The Day is Tuesday result:The Day is Friday.
+[171]20 6 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[172]21 6 2300 reference:The Day is Thursday result:The Day is Sunday.
+[177]26 6 2300 reference:The Day is Tuesday result:The Day is Friday.
+[178]27 6 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[179]28 6 2300 reference:The Day is Thursday result:The Day is Sunday.
+[184]3 7 2300 reference:The Day is Tuesday result:The Day is Friday.
+[185]4 7 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[186]5 7 2300 reference:The Day is Thursday result:The Day is Sunday.
+[191]10 7 2300 reference:The Day is Tuesday result:The Day is Friday.
+[192]11 7 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[193]12 7 2300 reference:The Day is Thursday result:The Day is Sunday.
+[198]17 7 2300 reference:The Day is Tuesday result:The Day is Friday.
+[199]18 7 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[200]19 7 2300 reference:The Day is Thursday result:The Day is Sunday.
+[205]24 7 2300 reference:The Day is Tuesday result:The Day is Friday.
+[206]25 7 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[207]26 7 2300 reference:The Day is Thursday result:The Day is Sunday.
+[212]31 7 2300 reference:The Day is Tuesday result:The Day is Friday.
+[213]1 8 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[214]2 8 2300 reference:The Day is Thursday result:The Day is Sunday.
+[219]7 8 2300 reference:The Day is Tuesday result:The Day is Friday.
+[220]8 8 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[221]9 8 2300 reference:The Day is Thursday result:The Day is Sunday.
+[226]14 8 2300 reference:The Day is Tuesday result:The Day is Friday.
+[227]15 8 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[228]16 8 2300 reference:The Day is Thursday result:The Day is Sunday.
+[233]21 8 2300 reference:The Day is Tuesday result:The Day is Friday.
+[234]22 8 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[235]23 8 2300 reference:The Day is Thursday result:The Day is Sunday.
+[240]28 8 2300 reference:The Day is Tuesday result:The Day is Friday.
+[241]29 8 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[242]30 8 2300 reference:The Day is Thursday result:The Day is Sunday.
+[247]4 9 2300 reference:The Day is Tuesday result:The Day is Friday.
+[248]5 9 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[249]6 9 2300 reference:The Day is Thursday result:The Day is Sunday.
+[254]11 9 2300 reference:The Day is Tuesday result:The Day is Friday.
+[255]12 9 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[256]13 9 2300 reference:The Day is Thursday result:The Day is Sunday.
+[261]18 9 2300 reference:The Day is Tuesday result:The Day is Friday.
+[262]19 9 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[263]20 9 2300 reference:The Day is Thursday result:The Day is Sunday.
+[268]25 9 2300 reference:The Day is Tuesday result:The Day is Friday.
+[269]26 9 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[270]27 9 2300 reference:The Day is Thursday result:The Day is Sunday.
+[275]2 10 2300 reference:The Day is Tuesday result:The Day is Friday.
+[276]3 10 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[277]4 10 2300 reference:The Day is Thursday result:The Day is Sunday.
+[282]9 10 2300 reference:The Day is Tuesday result:The Day is Friday.
+[283]10 10 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[284]11 10 2300 reference:The Day is Thursday result:The Day is Sunday.
+[289]16 10 2300 reference:The Day is Tuesday result:The Day is Friday.
+[290]17 10 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[291]18 10 2300 reference:The Day is Thursday result:The Day is Sunday.
+[296]23 10 2300 reference:The Day is Tuesday result:The Day is Friday.
+[297]24 10 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[298]25 10 2300 reference:The Day is Thursday result:The Day is Sunday.
+[303]30 10 2300 reference:The Day is Tuesday result:The Day is Friday.
+[304]31 10 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[305]1 11 2300 reference:The Day is Thursday result:The Day is Sunday.
+[310]6 11 2300 reference:The Day is Tuesday result:The Day is Friday.
+[311]7 11 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[312]8 11 2300 reference:The Day is Thursday result:The Day is Sunday.
+[317]13 11 2300 reference:The Day is Tuesday result:The Day is Friday.
+[318]14 11 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[319]15 11 2300 reference:The Day is Thursday result:The Day is Sunday.
+[324]20 11 2300 reference:The Day is Tuesday result:The Day is Friday.
+[325]21 11 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[326]22 11 2300 reference:The Day is Thursday result:The Day is Sunday.
+[331]27 11 2300 reference:The Day is Tuesday result:The Day is Friday.
+[332]28 11 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[333]29 11 2300 reference:The Day is Thursday result:The Day is Sunday.
+[338]4 12 2300 reference:The Day is Tuesday result:The Day is Friday.
+[339]5 12 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[340]6 12 2300 reference:The Day is Thursday result:The Day is Sunday.
+[345]11 12 2300 reference:The Day is Tuesday result:The Day is Friday.
+[346]12 12 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[347]13 12 2300 reference:The Day is Thursday result:The Day is Sunday.
+[352]18 12 2300 reference:The Day is Tuesday result:The Day is Friday.
+[353]19 12 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[354]20 12 2300 reference:The Day is Thursday result:The Day is Sunday.
+[359]25 12 2300 reference:The Day is Tuesday result:The Day is Friday.
+[360]26 12 2300 reference:The Day is Wednesday result:The Day is Saturday.
+[361]27 12 2300 reference:The Day is Thursday result:The Day is Sunday.

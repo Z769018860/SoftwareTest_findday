@@ -1,0 +1,200 @@
+[5]5 1 2500 reference:The Day is Tuesday result:The Day is Friday.
+[6]6 1 2500 reference:The Day is Wednesday result:The Day is Saturday.
+[7]7 1 2500 reference:The Day is Thursday result:The Day is Sunday.
+[12]12 1 2500 reference:The Day is Tuesday result:The Day is Friday.
+[13]13 1 2500 reference:The Day is Wednesday result:The Day is Saturday.
+[14]14 1 2500 reference:The Day is Thursday result:The Day is Sunday.
+[19]19 1 2500 reference:The Day is Tuesday result:The Day is Friday.
+[20]20 1 2500 reference:The Day is Wednesday result:The Day is Saturday.
+[21]21 1 2500 reference:The Day is Thursday result:The Day is Sunday.
+[26]26 1 2500 reference:The Day is Tuesday result:The Day is Friday.
+[27]27 1 2500 reference:The Day is Wednesday result:The Day is Saturday.
+[28]28 1 2500 reference:The Day is Thursday result:The Day is Sunday.
+[33]2 2 2500 reference:The Day is Tuesday result:The Day is Friday.
+[34]3 2 2500 reference:The Day is Wednesday result:The Day is Saturday.
+[35]4 2 2500 reference:The Day is Thursday result:The Day is Sunday.
+[40]9 2 2500 reference:The Day is Tuesday result:The Day is Friday.
+[41]10 2 2500 reference:The Day is Wednesday result:The Day is Saturday.
+[42]11 2 2500 reference:The Day is Thursday result:The Day is Sunday.
+[47]16 2 2500 reference:The Day is Tuesday result:The Day is Friday.
+[48]17 2 2500 reference:The Day is Wednesday result:The Day is Saturday.
+[49]18 2 2500 reference:The Day is Thursday result:The Day is Sunday.
+[54]23 2 2500 reference:The Day is Tuesday result:The Day is Friday.
+[55]24 2 2500 reference:The Day is Wednesday result:The Day is Saturday.
+[56]25 2 2500 reference:The Day is Thursday result:The Day is Sunday.
+[60]1 3 2500 reference:The Day is Monday result:The Day is Friday.
+[61]2 3 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[62]3 3 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[63]4 3 2500 reference:The Day is Thursday result:The Day is Monday.
+[67]8 3 2500 reference:The Day is Monday result:The Day is Friday.
+[68]9 3 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[69]10 3 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[70]11 3 2500 reference:The Day is Thursday result:The Day is Monday.
+[74]15 3 2500 reference:The Day is Monday result:The Day is Friday.
+[75]16 3 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[76]17 3 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[77]18 3 2500 reference:The Day is Thursday result:The Day is Monday.
+[81]22 3 2500 reference:The Day is Monday result:The Day is Friday.
+[82]23 3 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[83]24 3 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[84]25 3 2500 reference:The Day is Thursday result:The Day is Monday.
+[88]29 3 2500 reference:The Day is Monday result:The Day is Friday.
+[89]30 3 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[90]31 3 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[91]1 4 2500 reference:The Day is Thursday result:The Day is Monday.
+[95]5 4 2500 reference:The Day is Monday result:The Day is Friday.
+[96]6 4 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[97]7 4 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[98]8 4 2500 reference:The Day is Thursday result:The Day is Monday.
+[102]12 4 2500 reference:The Day is Monday result:The Day is Friday.
+[103]13 4 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[104]14 4 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[105]15 4 2500 reference:The Day is Thursday result:The Day is Monday.
+[109]19 4 2500 reference:The Day is Monday result:The Day is Friday.
+[110]20 4 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[111]21 4 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[112]22 4 2500 reference:The Day is Thursday result:The Day is Monday.
+[116]26 4 2500 reference:The Day is Monday result:The Day is Friday.
+[117]27 4 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[118]28 4 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[119]29 4 2500 reference:The Day is Thursday result:The Day is Monday.
+[123]3 5 2500 reference:The Day is Monday result:The Day is Friday.
+[124]4 5 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[125]5 5 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[126]6 5 2500 reference:The Day is Thursday result:The Day is Monday.
+[130]10 5 2500 reference:The Day is Monday result:The Day is Friday.
+[131]11 5 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[132]12 5 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[133]13 5 2500 reference:The Day is Thursday result:The Day is Monday.
+[137]17 5 2500 reference:The Day is Monday result:The Day is Friday.
+[138]18 5 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[139]19 5 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[140]20 5 2500 reference:The Day is Thursday result:The Day is Monday.
+[144]24 5 2500 reference:The Day is Monday result:The Day is Friday.
+[145]25 5 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[146]26 5 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[147]27 5 2500 reference:The Day is Thursday result:The Day is Monday.
+[151]31 5 2500 reference:The Day is Monday result:The Day is Friday.
+[152]1 6 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[153]2 6 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[154]3 6 2500 reference:The Day is Thursday result:The Day is Monday.
+[158]7 6 2500 reference:The Day is Monday result:The Day is Friday.
+[159]8 6 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[160]9 6 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[161]10 6 2500 reference:The Day is Thursday result:The Day is Monday.
+[165]14 6 2500 reference:The Day is Monday result:The Day is Friday.
+[166]15 6 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[167]16 6 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[168]17 6 2500 reference:The Day is Thursday result:The Day is Monday.
+[172]21 6 2500 reference:The Day is Monday result:The Day is Friday.
+[173]22 6 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[174]23 6 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[175]24 6 2500 reference:The Day is Thursday result:The Day is Monday.
+[179]28 6 2500 reference:The Day is Monday result:The Day is Friday.
+[180]29 6 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[181]30 6 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[182]1 7 2500 reference:The Day is Thursday result:The Day is Monday.
+[186]5 7 2500 reference:The Day is Monday result:The Day is Friday.
+[187]6 7 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[188]7 7 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[189]8 7 2500 reference:The Day is Thursday result:The Day is Monday.
+[193]12 7 2500 reference:The Day is Monday result:The Day is Friday.
+[194]13 7 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[195]14 7 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[196]15 7 2500 reference:The Day is Thursday result:The Day is Monday.
+[200]19 7 2500 reference:The Day is Monday result:The Day is Friday.
+[201]20 7 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[202]21 7 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[203]22 7 2500 reference:The Day is Thursday result:The Day is Monday.
+[207]26 7 2500 reference:The Day is Monday result:The Day is Friday.
+[208]27 7 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[209]28 7 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[210]29 7 2500 reference:The Day is Thursday result:The Day is Monday.
+[214]2 8 2500 reference:The Day is Monday result:The Day is Friday.
+[215]3 8 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[216]4 8 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[217]5 8 2500 reference:The Day is Thursday result:The Day is Monday.
+[221]9 8 2500 reference:The Day is Monday result:The Day is Friday.
+[222]10 8 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[223]11 8 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[224]12 8 2500 reference:The Day is Thursday result:The Day is Monday.
+[228]16 8 2500 reference:The Day is Monday result:The Day is Friday.
+[229]17 8 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[230]18 8 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[231]19 8 2500 reference:The Day is Thursday result:The Day is Monday.
+[235]23 8 2500 reference:The Day is Monday result:The Day is Friday.
+[236]24 8 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[237]25 8 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[238]26 8 2500 reference:The Day is Thursday result:The Day is Monday.
+[242]30 8 2500 reference:The Day is Monday result:The Day is Friday.
+[243]31 8 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[244]1 9 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[245]2 9 2500 reference:The Day is Thursday result:The Day is Monday.
+[249]6 9 2500 reference:The Day is Monday result:The Day is Friday.
+[250]7 9 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[251]8 9 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[252]9 9 2500 reference:The Day is Thursday result:The Day is Monday.
+[256]13 9 2500 reference:The Day is Monday result:The Day is Friday.
+[257]14 9 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[258]15 9 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[259]16 9 2500 reference:The Day is Thursday result:The Day is Monday.
+[263]20 9 2500 reference:The Day is Monday result:The Day is Friday.
+[264]21 9 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[265]22 9 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[266]23 9 2500 reference:The Day is Thursday result:The Day is Monday.
+[270]27 9 2500 reference:The Day is Monday result:The Day is Friday.
+[271]28 9 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[272]29 9 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[273]30 9 2500 reference:The Day is Thursday result:The Day is Monday.
+[277]4 10 2500 reference:The Day is Monday result:The Day is Friday.
+[278]5 10 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[279]6 10 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[280]7 10 2500 reference:The Day is Thursday result:The Day is Monday.
+[284]11 10 2500 reference:The Day is Monday result:The Day is Friday.
+[285]12 10 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[286]13 10 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[287]14 10 2500 reference:The Day is Thursday result:The Day is Monday.
+[291]18 10 2500 reference:The Day is Monday result:The Day is Friday.
+[292]19 10 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[293]20 10 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[294]21 10 2500 reference:The Day is Thursday result:The Day is Monday.
+[298]25 10 2500 reference:The Day is Monday result:The Day is Friday.
+[299]26 10 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[300]27 10 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[301]28 10 2500 reference:The Day is Thursday result:The Day is Monday.
+[305]1 11 2500 reference:The Day is Monday result:The Day is Friday.
+[306]2 11 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[307]3 11 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[308]4 11 2500 reference:The Day is Thursday result:The Day is Monday.
+[312]8 11 2500 reference:The Day is Monday result:The Day is Friday.
+[313]9 11 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[314]10 11 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[315]11 11 2500 reference:The Day is Thursday result:The Day is Monday.
+[319]15 11 2500 reference:The Day is Monday result:The Day is Friday.
+[320]16 11 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[321]17 11 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[322]18 11 2500 reference:The Day is Thursday result:The Day is Monday.
+[326]22 11 2500 reference:The Day is Monday result:The Day is Friday.
+[327]23 11 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[328]24 11 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[329]25 11 2500 reference:The Day is Thursday result:The Day is Monday.
+[333]29 11 2500 reference:The Day is Monday result:The Day is Friday.
+[334]30 11 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[335]1 12 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[336]2 12 2500 reference:The Day is Thursday result:The Day is Monday.
+[340]6 12 2500 reference:The Day is Monday result:The Day is Friday.
+[341]7 12 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[342]8 12 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[343]9 12 2500 reference:The Day is Thursday result:The Day is Monday.
+[347]13 12 2500 reference:The Day is Monday result:The Day is Friday.
+[348]14 12 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[349]15 12 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[350]16 12 2500 reference:The Day is Thursday result:The Day is Monday.
+[354]20 12 2500 reference:The Day is Monday result:The Day is Friday.
+[355]21 12 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[356]22 12 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[357]23 12 2500 reference:The Day is Thursday result:The Day is Monday.
+[361]27 12 2500 reference:The Day is Monday result:The Day is Friday.
+[362]28 12 2500 reference:The Day is Tuesday result:The Day is Saturday.
+[363]29 12 2500 reference:The Day is Wednesday result:The Day is Sunday.
+[364]30 12 2500 reference:The Day is Thursday result:The Day is Monday.
