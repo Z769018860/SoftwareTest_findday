@@ -105,6 +105,13 @@
 </section>
 <section class="slide level2">
 
+<figure>
+<img src="http://static.zybuluo.com/Z769018860/mgak8y1p3b7vc1fxjv85wq8y/image.png" alt="16" /><figcaption>16</figcaption>
+</figure>
+<p>闰年问题：普通闰年无误，但是世纪闰年有误。【bug2】</p>
+</section>
+<section class="slide level2">
+
 <ul>
 <li>无输入</li>
 </ul>
@@ -119,7 +126,7 @@
 <section class="slide level2">
 
 <p>当输入非整型时，会进入死循环，只能强制退出。</p>
-<p>无论是字母还是符号。【bug2】</p>
+<p>无论是字母还是符号。【bug3】</p>
 </section>
 <section class="slide level2">
 
@@ -263,7 +270,7 @@
 </section>
 <section class="slide level2">
 
-<p>【bug】</p>
+<p>【bug4】</p>
 <p>现在初步得到猜测：1900-2100年间的日期对应星期都是正确的，但是2100-2500年间有错误，并且错误有规律。是每一周的固定几天出错，后来猜测每一百年改变一次规律，又进行了几个单独年份的测试，最后得到的结果如下：</p>
 </section>
 <section class="slide level2">
@@ -403,11 +410,12 @@ done
 <ol type="1">
 <li>非整型类型的无效输入会导致死循环</li>
 <li>日期&lt;=0 但是月年正确时不会报错</li>
+<li>世纪闰年有误</li>
 </ol>
 </section>
 <section class="slide level2">
 
-<ol start="3" type="1">
+<ol start="4" type="1">
 <li>从2100-2500年间规律性出错 从2100年3月3日开始出错 2100-2199年——所有周三周四周日都为周四周五周一 2200-2299年——所有周二周三周四周六都为周四周五周六周一 2300-2499年——所有周二周三周四都为周五周六周日 2500年从3月1日开始所有周一周二周三周四都为周五周六周日周一</li>
 </ol>
 </section>
@@ -417,7 +425,13 @@ done
 <ol type="1">
 <li>没有进行类型判断，并没有处理整型以外的类型，导致读入错误进入死循环</li>
 <li>没有进行日期的下界判断，导致没有报错正常输出</li>
-<li>这个我觉得不是代码功能性错误或者逻辑错误导致的，应该属于人为控制，故意更改了一些年份的输出（比如每隔100年换一下错误输出），而且这个太具有规律性，是按周出错，猜测是直接写了if判断条件强行改变了输出。</li>
+<li>只进行了mod 4的判断但没有进行mod 10和mod 1000的判断，一律视为闰年</li>
+</ol>
+</section>
+<section class="slide level2">
+
+<ol start="4" type="1">
+<li>开始觉得是世纪闰年导致，毕竟这个年份和日期具有规律性。但是如果单纯是周年闰年，那么应该后面日期全部出错，现在只有50%错误率，非常奇怪。可能程序还带有某种校准机制？不然就是人为故意的错误。</li>
 </ol>
 </section>
 <section class="slide level2">
@@ -434,6 +448,12 @@ done
 <ol start="4" type="1">
 <li>测试工程量还是比较大，实际上我是在手动进行数据的筛选工作，而更理想的情况是我们把这个也编入脚本，由脚本来进行筛选，这样效率更高，准确率也更高。</li>
 <li>实际上查资料发现一般万年历是从1900年1月1日为周一开始计算的，但是excel实际上是周日，而且1900年被认为是闰年，巧合的是这个软件也这么认为了。所以说我这一段是全pass的，但如果是从按照一般万年历，应该从1900年1月1日到1900年2月28日的结果都是有误的，直到3月1日恢复正常。</li>
+</ol>
+</section>
+<section class="slide level2">
+
+<ol start="6" type="1">
+<li>脚本是在linux下运行的，但是手动是在windows下进行的，实际上可能这两个平台上会有差异。</li>
 </ol>
 </section>
 <section id="补充说明" class="slide level2">
