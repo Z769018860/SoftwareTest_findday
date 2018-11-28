@@ -1,156 +1,0 @@
-[2]2 1 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[3]3 1 2199 reference:The Day is Thursday result:The Day is Friday.
-[6]6 1 2199 reference:The Day is Sunday result:The Day is Monday.
-[9]9 1 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[10]10 1 2199 reference:The Day is Thursday result:The Day is Friday.
-[13]13 1 2199 reference:The Day is Sunday result:The Day is Monday.
-[16]16 1 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[17]17 1 2199 reference:The Day is Thursday result:The Day is Friday.
-[20]20 1 2199 reference:The Day is Sunday result:The Day is Monday.
-[23]23 1 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[24]24 1 2199 reference:The Day is Thursday result:The Day is Friday.
-[27]27 1 2199 reference:The Day is Sunday result:The Day is Monday.
-[30]30 1 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[31]31 1 2199 reference:The Day is Thursday result:The Day is Friday.
-[34]3 2 2199 reference:The Day is Sunday result:The Day is Monday.
-[37]6 2 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[38]7 2 2199 reference:The Day is Thursday result:The Day is Friday.
-[41]10 2 2199 reference:The Day is Sunday result:The Day is Monday.
-[44]13 2 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[45]14 2 2199 reference:The Day is Thursday result:The Day is Friday.
-[48]17 2 2199 reference:The Day is Sunday result:The Day is Monday.
-[51]20 2 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[52]21 2 2199 reference:The Day is Thursday result:The Day is Friday.
-[55]24 2 2199 reference:The Day is Sunday result:The Day is Monday.
-[58]27 2 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[59]28 2 2199 reference:The Day is Thursday result:The Day is Friday.
-[62]3 3 2199 reference:The Day is Sunday result:The Day is Monday.
-[65]6 3 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[66]7 3 2199 reference:The Day is Thursday result:The Day is Friday.
-[69]10 3 2199 reference:The Day is Sunday result:The Day is Monday.
-[72]13 3 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[73]14 3 2199 reference:The Day is Thursday result:The Day is Friday.
-[76]17 3 2199 reference:The Day is Sunday result:The Day is Monday.
-[79]20 3 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[80]21 3 2199 reference:The Day is Thursday result:The Day is Friday.
-[83]24 3 2199 reference:The Day is Sunday result:The Day is Monday.
-[86]27 3 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[87]28 3 2199 reference:The Day is Thursday result:The Day is Friday.
-[90]31 3 2199 reference:The Day is Sunday result:The Day is Monday.
-[93]3 4 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[94]4 4 2199 reference:The Day is Thursday result:The Day is Friday.
-[97]7 4 2199 reference:The Day is Sunday result:The Day is Monday.
-[100]10 4 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[101]11 4 2199 reference:The Day is Thursday result:The Day is Friday.
-[104]14 4 2199 reference:The Day is Sunday result:The Day is Monday.
-[107]17 4 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[108]18 4 2199 reference:The Day is Thursday result:The Day is Friday.
-[111]21 4 2199 reference:The Day is Sunday result:The Day is Monday.
-[114]24 4 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[115]25 4 2199 reference:The Day is Thursday result:The Day is Friday.
-[118]28 4 2199 reference:The Day is Sunday result:The Day is Monday.
-[121]1 5 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[122]2 5 2199 reference:The Day is Thursday result:The Day is Friday.
-[125]5 5 2199 reference:The Day is Sunday result:The Day is Monday.
-[128]8 5 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[129]9 5 2199 reference:The Day is Thursday result:The Day is Friday.
-[132]12 5 2199 reference:The Day is Sunday result:The Day is Monday.
-[135]15 5 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[136]16 5 2199 reference:The Day is Thursday result:The Day is Friday.
-[139]19 5 2199 reference:The Day is Sunday result:The Day is Monday.
-[142]22 5 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[143]23 5 2199 reference:The Day is Thursday result:The Day is Friday.
-[146]26 5 2199 reference:The Day is Sunday result:The Day is Monday.
-[149]29 5 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[150]30 5 2199 reference:The Day is Thursday result:The Day is Friday.
-[153]2 6 2199 reference:The Day is Sunday result:The Day is Monday.
-[156]5 6 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[157]6 6 2199 reference:The Day is Thursday result:The Day is Friday.
-[160]9 6 2199 reference:The Day is Sunday result:The Day is Monday.
-[163]12 6 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[164]13 6 2199 reference:The Day is Thursday result:The Day is Friday.
-[167]16 6 2199 reference:The Day is Sunday result:The Day is Monday.
-[170]19 6 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[171]20 6 2199 reference:The Day is Thursday result:The Day is Friday.
-[174]23 6 2199 reference:The Day is Sunday result:The Day is Monday.
-[177]26 6 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[178]27 6 2199 reference:The Day is Thursday result:The Day is Friday.
-[181]30 6 2199 reference:The Day is Sunday result:The Day is Monday.
-[184]3 7 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[185]4 7 2199 reference:The Day is Thursday result:The Day is Friday.
-[188]7 7 2199 reference:The Day is Sunday result:The Day is Monday.
-[191]10 7 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[192]11 7 2199 reference:The Day is Thursday result:The Day is Friday.
-[195]14 7 2199 reference:The Day is Sunday result:The Day is Monday.
-[198]17 7 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[199]18 7 2199 reference:The Day is Thursday result:The Day is Friday.
-[202]21 7 2199 reference:The Day is Sunday result:The Day is Monday.
-[205]24 7 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[206]25 7 2199 reference:The Day is Thursday result:The Day is Friday.
-[209]28 7 2199 reference:The Day is Sunday result:The Day is Monday.
-[212]31 7 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[213]1 8 2199 reference:The Day is Thursday result:The Day is Friday.
-[216]4 8 2199 reference:The Day is Sunday result:The Day is Monday.
-[219]7 8 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[220]8 8 2199 reference:The Day is Thursday result:The Day is Friday.
-[223]11 8 2199 reference:The Day is Sunday result:The Day is Monday.
-[226]14 8 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[227]15 8 2199 reference:The Day is Thursday result:The Day is Friday.
-[230]18 8 2199 reference:The Day is Sunday result:The Day is Monday.
-[233]21 8 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[234]22 8 2199 reference:The Day is Thursday result:The Day is Friday.
-[237]25 8 2199 reference:The Day is Sunday result:The Day is Monday.
-[240]28 8 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[241]29 8 2199 reference:The Day is Thursday result:The Day is Friday.
-[244]1 9 2199 reference:The Day is Sunday result:The Day is Monday.
-[247]4 9 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[248]5 9 2199 reference:The Day is Thursday result:The Day is Friday.
-[251]8 9 2199 reference:The Day is Sunday result:The Day is Monday.
-[254]11 9 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[255]12 9 2199 reference:The Day is Thursday result:The Day is Friday.
-[258]15 9 2199 reference:The Day is Sunday result:The Day is Monday.
-[261]18 9 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[262]19 9 2199 reference:The Day is Thursday result:The Day is Friday.
-[265]22 9 2199 reference:The Day is Sunday result:The Day is Monday.
-[268]25 9 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[269]26 9 2199 reference:The Day is Thursday result:The Day is Friday.
-[272]29 9 2199 reference:The Day is Sunday result:The Day is Monday.
-[275]2 10 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[276]3 10 2199 reference:The Day is Thursday result:The Day is Friday.
-[279]6 10 2199 reference:The Day is Sunday result:The Day is Monday.
-[282]9 10 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[283]10 10 2199 reference:The Day is Thursday result:The Day is Friday.
-[286]13 10 2199 reference:The Day is Sunday result:The Day is Monday.
-[289]16 10 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[290]17 10 2199 reference:The Day is Thursday result:The Day is Friday.
-[293]20 10 2199 reference:The Day is Sunday result:The Day is Monday.
-[296]23 10 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[297]24 10 2199 reference:The Day is Thursday result:The Day is Friday.
-[300]27 10 2199 reference:The Day is Sunday result:The Day is Monday.
-[303]30 10 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[304]31 10 2199 reference:The Day is Thursday result:The Day is Friday.
-[307]3 11 2199 reference:The Day is Sunday result:The Day is Monday.
-[310]6 11 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[311]7 11 2199 reference:The Day is Thursday result:The Day is Friday.
-[314]10 11 2199 reference:The Day is Sunday result:The Day is Monday.
-[317]13 11 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[318]14 11 2199 reference:The Day is Thursday result:The Day is Friday.
-[321]17 11 2199 reference:The Day is Sunday result:The Day is Monday.
-[324]20 11 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[325]21 11 2199 reference:The Day is Thursday result:The Day is Friday.
-[328]24 11 2199 reference:The Day is Sunday result:The Day is Monday.
-[331]27 11 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[332]28 11 2199 reference:The Day is Thursday result:The Day is Friday.
-[335]1 12 2199 reference:The Day is Sunday result:The Day is Monday.
-[338]4 12 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[339]5 12 2199 reference:The Day is Thursday result:The Day is Friday.
-[342]8 12 2199 reference:The Day is Sunday result:The Day is Monday.
-[345]11 12 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[346]12 12 2199 reference:The Day is Thursday result:The Day is Friday.
-[349]15 12 2199 reference:The Day is Sunday result:The Day is Monday.
-[352]18 12 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[353]19 12 2199 reference:The Day is Thursday result:The Day is Friday.
-[356]22 12 2199 reference:The Day is Sunday result:The Day is Monday.
-[359]25 12 2199 reference:The Day is Wednesday result:The Day is Thursday.
-[360]26 12 2199 reference:The Day is Thursday result:The Day is Friday.
-[363]29 12 2199 reference:The Day is Sunday result:The Day is Monday.

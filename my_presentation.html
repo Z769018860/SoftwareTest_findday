@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <meta name="author" content="2018.11.24">
+  <meta name="author" content="2018.11.28">
   <title>软件测试与分析-黑盒测试</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="reveal.js/css/reveal.css">
   <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="reveal.js/css/theme/solarized.css" id="theme">
   <!-- Printing and PDF exports -->
   <script>
     var link = document.createElement( 'link' );
@@ -29,12 +29,12 @@
 
 <section>
   <h1 class="title">软件测试与分析-黑盒测试</h1>
-  <p class="author">2018.11.24</p>
+  <p class="author">2018.11.28</p>
   <p class="date">张丽玮 2016K8009929029</p>
 </section>
 
-<section id="测试要求" class="slide level2">
-<h2>测试要求</h2>
+<section id="测试要求" class="slide level1">
+<h1>测试要求</h1>
 <ol type="1">
 <li>输入&quot;D M Y&quot;返回当天是星期几（范围从1900年到2500年）</li>
 <li>对于输入的形式要有明确的提示</li>
@@ -43,8 +43,11 @@
 <li>黑盒方法设计测试用例</li>
 </ol>
 </section>
-<section id="测试方法分析" class="slide level2">
-<h2>测试方法分析</h2>
+<section id="测试方法分析" class="slide level1">
+<h1>测试方法分析</h1>
+</section>
+<section class="slide level1">
+
 <ol type="1">
 <li>由于输入不合法时没有特定输出要求，因此暂时认为可以手动测试不合法输入，之后再用脚本进行压力测试。</li>
 <li>由于1900-2500年总体数据量过于庞大，因此不选择全部天数测试的全部遍历测试方法，但是可以考虑以下方法</li>
@@ -55,247 +58,275 @@
 <li>组合测试方法</li>
 </ul>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <ol start="3" type="1">
 <li>数据量较大，考虑用脚本实现。而关于如何生成测试数据，我应用了现成的excel软件功能，只需要更改单元格格式，就可以输出对应日期是星期几，并且这样生成csv文件对于之后脚本处理较为方便。</li>
 </ol>
 </section>
-<section class="slide level2">
-
-<h3 id="测试算法分析">测试算法分析</h3>
+<section id="测试算法分析" class="slide level1">
+<h1>测试算法分析</h1>
 <ol type="1">
 <li>全部遍历算法：数据量过大，不进行选择</li>
-<li><p>回溯算法：</p>
-<p>实际上考虑回溯算法，是因为日期和星期之间是有规律存在的，或者说是可以构成循环的。 一周七天，一年365或者366天，由于4年一个闰年，因此以年来计算，28年将会产生一个“星期-日期”的循环。也就是说，我的&quot;D M Y&quot;和“D M Y+28”对应星期几应该是相同的。既然如此，我们就可以采用回溯算法，给定一个日期，然后在年份上加减28的倍数，从而计算是否相等。</p></li>
+<li>回溯算法： 实际上考虑回溯算法，是因为日期和星期之间是有规律存在的，或者说是可以构成循环的。 一周七天，一年365或者366天，由于4年一个闰年，因此以年来计算，28年将会产生一个“星期-日期”的循环。也就是说，我的&quot;D M Y&quot;和“D M Y+28”对应星期几应该是相同的。既然如此，我们就可以采用回溯算法，给定一个日期，然后在年份上加减28的倍数，从而计算是否相等。</li>
 </ol>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <ol start="3" type="1">
-<li><p>随机测试方法：</p>
-非常显然，由于我之前分析过28年一个周期，所以这里可以只随机选择前28年中的任意一天，然后年份全部一直+28直到2500年。同样，这个也可以在excel中用随机生成日期的公式完成。</li>
-<li><p>组合测试方法：</p>
-<p>我认为这个针对这个黑盒测试，组合测试没有必要，因为其实它本身就是一个组合测试——日、月、年的三元素组合。因此我觉得这样的输入数据难以分组，分组形式只可能是无效输入和有效输入组合，这个手动测试就能发现问题。</p></li>
+<li>随机测试方法： 非常显然，由于我之前分析过28年一个周期，所以这里可以只随机选择前28年中的任意一天，然后年份全部一直+28直到2500年。同样，这个也可以在excel中用随机生成日期的公式完成。</li>
+<li>组合测试方法： 我认为这个针对这个黑盒测试，组合测试没有必要，因为其实它本身就是一个组合测试——日、月、年的三元素组合。因此我觉得这样的输入数据难以分组，分组形式只可能是无效输入和有效输入组合，这个手动测试就能发现问题。</li>
 </ol>
 </section>
-<section id="具体实现" class="slide level2">
-<h2>具体实现</h2>
+<section id="具体实现" class="slide level1">
+<h1>具体实现</h1>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<h3 id="无效输入测试">无效输入测试</h3>
-</section>
-<section class="slide level2">
-
+<h2 id="无效输入测试">无效输入测试</h2>
 <ul>
 <li>整型无效</li>
 </ul>
 <figure>
 <img src="http://static.zybuluo.com/Z769018860/cfbbbmtfoei9qj1rs7m5bsvi/image.png" alt="1" /><figcaption>1</figcaption>
 </figure>
+</section>
+<section class="slide level1">
+
 <p>可以报错从年月日依次报错，并且会提示某月最多只有多少天，月份是1-12，不会出现卡死、关闭等现象。</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <figure>
 <img src="http://static.zybuluo.com/Z769018860/h1nvd7vefl4yi5gtb1tanvne/image.png" alt="2" /><figcaption>2</figcaption>
 </figure>
 <p>但是如果年份月份符合要求时，判断日期会出错。当日期&lt;=0时并不会报错，反而会输出结果。大体可以推断这是由于日期只进行了上界判断而没有判断下界。【bug1】</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <figure>
-<img src="http://static.zybuluo.com/Z769018860/mgak8y1p3b7vc1fxjv85wq8y/image.png" alt="16" /><figcaption>16</figcaption>
+<img src="http://static.zybuluo.com/Z769018860/mgak8y1p3b7vc1fxjv85wq8y/image.png" alt="3" /><figcaption>3</figcaption>
 </figure>
 <p>闰年问题：普通闰年无误，但是世纪闰年有误。【bug2】</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <ul>
 <li>无输入</li>
 </ul>
 <p>无输入，一直空格回车时不会有任何输出（windows、linux都是）</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <ul>
-<li>输入类型无效 <img src="http://static.zybuluo.com/Z769018860/5gphjt1ttphbyy7dnmyt3lxz/image.png" alt="3" /></li>
+<li>输入类型无效</li>
 </ul>
+<figure>
+<img src="http://static.zybuluo.com/Z769018860/5gphjt1ttphbyy7dnmyt3lxz/image.png" alt="4" /><figcaption>4</figcaption>
+</figure>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>当输入非整型时，会进入死循环，只能强制退出。</p>
 <p>无论是字母还是符号。【bug3】</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <ul>
 <li>压力测试</li>
 </ul>
 <p>只考虑整型无效的压力测试，测试结果并无异常。</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<h3 id="有效输入测试">有效输入测试</h3>
+<h2 id="有效输入测试">有效输入测试</h2>
 <ul>
 <li>1900-1927范围内28年的所有日期情况</li>
 </ul>
 <figure>
-<img src="http://static.zybuluo.com/Z769018860/jda2hj2l6rch7gzpowabpk65/image.png" alt="4" /><figcaption>4</figcaption>
+<img src="http://static.zybuluo.com/Z769018860/jda2hj2l6rch7gzpowabpk65/image.png" alt="5" /><figcaption>5</figcaption>
 </figure>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>10231个测试用例全部pass，没有生成diffline.txt文件</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <ul>
 <li>随机测试</li>
 </ul>
 <p>随机测试是在excel里面随机生成1000个1900-2500范围内的有效日期，然后用脚本进行测试。</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>· 第一组1000个测试数据：</p>
 <figure>
-<img src="http://static.zybuluo.com/Z769018860/lac8t7i6ezfq8gef8lgdj041/image.png" alt="5" /><figcaption>5</figcaption>
+<img src="http://static.zybuluo.com/Z769018860/xrt9cy75bz0dzyctb2o23zwn/image.png" alt="6" /><figcaption>6</figcaption>
 </figure>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<p>查看diffline.txt的错误输出文本，共有273个错误，即这次的错误率是273/1000</p>
+<p>查看diffline.txt的错误输出文本，共有678个错误，即这次的错误率是678/1000</p>
 <p>接下来开始分析错误日期：</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <figure>
-<img src="http://static.zybuluo.com/Z769018860/ajf1szjhi5yktl6ogq51a0vk/image.png" alt="6" /><figcaption>6</figcaption>
+<img src="http://static.zybuluo.com/Z769018860/fq5o5tgq6968q9m5386wtlg1/image.png" alt="7" /><figcaption>7</figcaption>
 </figure>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>运用查询发现，所有错误日期都在2000年之后，不存在19xx的日期错误。那么初步猜测，1900-2000并没有错误。因此接下来进行分类测试：1900-2000年间和2000-2500年间</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>· 第二组1900-2000年间1000个测试数据：</p>
 <figure>
-<img src="http://static.zybuluo.com/Z769018860/4m0mw0xafubhtotxoeugg52x/image.png" alt="7" /><figcaption>7</figcaption>
+<img src="http://static.zybuluo.com/Z769018860/4m0mw0xafubhtotxoeugg52x/image.png" alt="8" /><figcaption>8</figcaption>
 </figure>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>1000个测试数据全部pass，也就是100%的通过率。再结合前28年全部pass的情况，现在有充足理由认为1900-2000年间全部正确没有bug。</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>· 第三组2000-2500年间1000个测试数据：</p>
 <figure>
-<img src="http://static.zybuluo.com/Z769018860/7uwwn92z4pyrntjqxk8ktget/image.png" alt="8" /><figcaption>8</figcaption>
+<img src="http://static.zybuluo.com/Z769018860/m5s901509symbbg3hlm0kloe/image.png" alt="9" /><figcaption>9</figcaption>
 </figure>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<p>可以发现这一次有相当多的错误情况。而查看diffline.txt的错误报告，共有378个错误，错误率是378/1000</p>
+<p>可以发现这一次有相当多的错误情况。而查看diffline.txt的错误报告，共有809个错误，错误率是809/1000</p>
 <p>继续分析错误日期：</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <figure>
-<img src="http://static.zybuluo.com/Z769018860/zayh8m6u973bdp85vz1zkpd8/image.png" alt="9" /><figcaption>9</figcaption>
+<img src="http://static.zybuluo.com/Z769018860/ghnmm5uhk3g9iakpmne8hxo9/image.png" alt="10" /><figcaption>10</figcaption>
 </figure>
 <p>发现并没有2000-2100年间的错误日期。按照同样的方法再次缩小范围。</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>· 第四组2000-2100年间1000个测试数据:</p>
 <p>全部pass，认为这之间没有bug。</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<p>· 第五组2100-2500年间1000个测试数据：</p>
+<p>· 第五组2100-2500年间1000个测试数据： <img src="http://static.zybuluo.com/Z769018860/qedt78vzjr688y06mobzsd5d/image.png" alt="11" /></p>
+</section>
+<section class="slide level1">
+
+<p>明显错误更多了，这时候再查看diffline.txt，共有1000个错误，错误率1000/1000</p>
 <figure>
-<img src="http://static.zybuluo.com/Z769018860/a7c1na4b02sk5yc6hzmbwtlt/image.png" alt="10" /><figcaption>10</figcaption>
+<img src="http://static.zybuluo.com/Z769018860/chn3o9rwwj11p5x665p995yw/image.png" />
 </figure>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<p>明显错误更多了，这时候再查看diffline.txt，共有468个错误，错误率468/1000</p>
-<p>继续分析错误日期：</p>
+<p>百分之一百的错误率，对于随机测试来说可以基本认为这表示从2100掉2500年间的所有日期都是错的。</p>
+<p>那么为什么会导致这种错误？根据之前世纪闰年有误，推测是由世纪闰年导致，因此接着选取几个年份分析。</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
+<p>· 第六组2300年的全部365个测试数据</p>
 <figure>
-<img src="http://static.zybuluo.com/Z769018860/wssd20jxc9owq5721mbajei0/image.png" alt="11" /><figcaption>11</figcaption>
+<img src="http://static.zybuluo.com/Z769018860/o03o64kkohpub2nv3chuwmge/image.png" />
 </figure>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<p>然而目前肉眼已经难以判断出其中的规律。为了判断主要错误从哪里开始发生，查看samelin.txt，这时发现有这样的情况：</p>
+<p>错误非常有规律，可以看到在2月28日前后，从全部向后推移两天变成全部向后推移三天。因此可以判断这个是由于findday将2300年当做闰年，增加计算了2月29日的日期，导致的星期整体平移的结果。根据这个猜测再测另外几个世纪闰年。</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
+<p>· 第七组2100年的全部365个测试数据</p>
 <figure>
-<img src="http://static.zybuluo.com/Z769018860/x7axkpn0k5wno58l33n615ar/image.png" alt="12" /><figcaption>12</figcaption>
-</figure>
-<p>那么此时猜测一下，现在的bug和年份无关，而是和月、日有关，因此接下来选择一年的366天进行遍历，各选择两年。</p>
-</section>
-<section class="slide level2">
-
-<p>· 第六组2325年的全部365个测试数据</p>
-<figure>
-<img src="http://static.zybuluo.com/Z769018860/n6p61bxxfg0pr9mhrv4j3bgk/image.png" alt="13" /><figcaption>13</figcaption>
+<img src="http://static.zybuluo.com/Z769018860/uoa2koim0e4ygs4ex72i8hwf/image.png" />
 </figure>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<p>一眼就能看出报错非常有规律，然后去查看diffline.txt，</p>
+<p>同样非常有规律，实际上是从3月1日开始出错，并且所有日期都向后移一天，因此可以判定是世纪闰年2100年的2月29日多出来了。</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
+
+<p>· 第八组2200年的全部365个测试数据</p>
+<figure>
+<img src="http://static.zybuluo.com/Z769018860/f96d3s45u940kbixzw62k2jm/image.png" />
+</figure>
+</section>
+<section class="slide level1">
+
+<p>同样非常有规律，可以看到2月28日前后，从全部向后推移一天变成全部向后推移两天。</p>
+</section>
+<section class="slide level1">
+
+<p>· 第九组2400年的全部365个测试数据 <img src="http://static.zybuluo.com/Z769018860/deudgmzly2zrksr8ys83o6du/image.png" /></p>
+</section>
+<section class="slide level1">
+
+<p>由于2400年是闰年，所以所有日期仍然是向后推移3天</p>
+</section>
+<section class="slide level1">
+
+<p>· 第十组2500年的全部365个测试数据 <img src="http://static.zybuluo.com/Z769018860/vrwem55wl00ceqb01lp945ei/image.png" /></p>
+</section>
+<section class="slide level1">
+
+<p>2500年的2月29日同样多出，所以从前后从向后推移三天变为推移四天</p>
+</section>
+<section class="slide level1">
+
+<p>【bug】</p>
+<p>·现在初步得到猜测：1900-2100年间的日期对应星期都是正确的，但是2100-2500年间有错误，并且错误有规律。是由2月29日世纪闰年导致，因此</p>
+<p>2100年3月1日-2200年2月28日 全部向后推移一天</p>
+<p>2200年3月1日-2300年2月28日 全部向后推移两天</p>
+<p>2300年3月1日-2500年2月28日 全部向后推移三天</p>
+<p>2500年3月1日-2500年12月31日 全部向后推移四天</p>
+</section>
+<section class="slide level1">
+
+<p>·实际上在压力测试下可能出现了死循环卡死问题：</p>
+<p>在进行random测试时脚本一切正常，但是进行单年测试时，出现了导出文件中输出语句死循环的情况</p>
+</section>
+<section class="slide level1">
 
 <figure>
-<img src="http://static.zybuluo.com/Z769018860/pvhmio5ewdfofwffz4czhog2/image.png" alt="14" /><figcaption>14</figcaption>
+<img src="http://static.zybuluo.com/Z769018860/7qrt7cmosvmxhcpsa6b5dehr/image.png" />
 </figure>
-<p>非常明显，它所有的周二周三周四都判断错误，都错判成了周五周六周日。那么其他年份呢？</p>
+<p>输入无误，生成的test_in和test_out也没有问题。</p>
+<p>暂时无法定位是怎样出的问题，猜测是在特定条件下的压力测试可能出现死循环情况。</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<p>· 第七组2202年的全部365个测试数据</p>
-<figure>
-<img src="http://static.zybuluo.com/Z769018860/n18cwrdecoaodjgsw9itjrab/image.png" alt="15" /><figcaption>15</figcaption>
-</figure>
-<p>同样非常有规律，甚至比2325年还多了一个周六的错误。去查看diffline.txt也发现这一年所有的周二周三周四和周六都是错的。</p>
-</section>
-<section class="slide level2">
-
-<p>【bug4】</p>
-<p>现在初步得到猜测：1900-2100年间的日期对应星期都是正确的，但是2100-2500年间有错误，并且错误有规律。是每一周的固定几天出错，后来猜测每一百年改变一次规律，又进行了几个单独年份的测试，最后得到的结果如下：</p>
-</section>
-<section class="slide level2">
-
-<p>从2100年3月3日开始出错</p>
-<p>2100-2199年——所有周三周四周日都为周四周五周一</p>
-<p>2200-2299年——所有周二周三周四周六都为周四周五周六周一</p>
-<p>2300-2499年——所有周二周三周四都为周五周六周日</p>
-<p>2500年从3月1日开始所有周一周二周三周四都为周五周六周日周一</p>
-</section>
-<section class="slide level2">
-
-<h3 id="测试脚本">测试脚本</h3>
+<h2 id="测试脚本">测试脚本</h2>
 <p>实验过程中均采用我自己用shell编写的简易脚本，在linux上运行 · 一键完成脚本test0</p>
 <pre class="shell"><code>
 #! /bin/sh
 cat $1.csv | awk -F, &#39;{ print $1; }&#39; &gt; test_in.txt
 cat $1.csv | awk -F, &#39;{ print $2; }&#39; &gt; test_out.txt
+
+    if [  -f &quot;test_result.txt&quot; ];
+    then
+        rm test_result.txt
+    fi
 ##生成对应的测试文件输入和输出
 #i=0;
 cat test_in.txt | while read str_in #逐行获取输入
 do
     output=`./test.out $str_in &gt;&gt; test_temp.txt 2&gt;&amp;1`
 done
-cat test_temp.txt | grep &quot;The&quot; &gt;test_result.txt
+cat test_temp.txt | grep &quot;The Day&quot; | while read str
+do
+    echo ${str%%.} &gt;&gt; test_result.txt 2&gt;&amp;1
+done
+
+
 
     if [  -f &quot;test_temp.txt&quot; ];
     then
@@ -321,7 +352,7 @@ cat test_temp.txt | grep &quot;The&quot; &gt;test_result.txt
     sed -n ${i}p test_in.txt | while read str_in
     do
     #echo $output
-    if [ &quot;$reference&quot; \&lt; &quot;$result&quot; ]
+    if [ &quot;$reference&quot; \= &quot;$result&quot; ]
         then
         echo &quot;[$i]PASS!!!!!!&quot;
         echo &quot;[$i]$str_in reference:$reference&quot; &gt;&gt; sameline.txt
@@ -334,14 +365,14 @@ cat test_temp.txt | grep &quot;The&quot; &gt;test_result.txt
 done
 </code></pre>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>使用方法是输入 ./test0.sh 测试数据csv表名</p>
 <p>注：不要写csv后缀</p>
 <p>生成的diffline.txt会标注所有错误的行数、日期、以及正确输出和错误输出</p>
 <p>生成的sameline.txt则是所有正确的行数、日期、正确输出</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>· 分步式防卡死脚本test+test2</p>
 <pre class="shell"><code>
@@ -357,11 +388,18 @@ do
 done
 </code></pre>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <pre class="shell"><code>
 #! /bin/sh
-    cat terminal.txt | grep &quot;The&quot; &gt;test_result.txt
+cat terminal.txt | grep &quot;The Day&quot; | while read str
+do
+    echo ${str%%.} &gt;&gt; test_result.txt
+done
+    if [  -f &quot;test_temp.txt&quot; ];
+    then
+        rm test_temp.txt
+    fi
     if [  -f &quot;diffline.txt&quot; ];
     then
         rm diffline.txt
@@ -382,7 +420,7 @@ done
     sed -n ${i}p test_in.txt | while read str_in
     do
     #echo $output
-    if [ &quot;$reference&quot; \&lt; &quot;$result&quot; ]
+    if [ &quot;$reference&quot; \= &quot;$result&quot; ]
         then
         echo &quot;[$i]PASS!!!!!!&quot;
         else
@@ -394,7 +432,7 @@ done
 done
 </code></pre>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>使用方法：</p>
 <p>script terminal.txt先打开终端日志记录</p>
@@ -404,72 +442,69 @@ done
 <p>最后生成的文件结果和test0一样。</p>
 <p>这两个脚本只是防止一键完成时中途卡死，通过终端日志中转完成测试。</p>
 </section>
-<section id="结果总结" class="slide level2">
-<h2>结果总结</h2>
-<h3 id="发现的bug">发现的bug</h3>
+<section id="结果总结" class="slide level1">
+<h1>结果总结</h1>
+</section>
+<section class="slide level1">
+
+<h2 id="发现的bug">发现的bug</h2>
 <ol type="1">
 <li>非整型类型的无效输入会导致死循环</li>
 <li>日期&lt;=0 但是月年正确时不会报错</li>
 <li>世纪闰年有误</li>
 </ol>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <ol start="4" type="1">
-<li>从2100-2500年间规律性出错 从2100年3月3日开始出错 2100-2199年——所有周三周四周日都为周四周五周一 2200-2299年——所有周二周三周四周六都为周四周五周六周一 2300-2499年——所有周二周三周四都为周五周六周日 2500年从3月1日开始所有周一周二周三周四都为周五周六周日周一</li>
+<li>从2100-2500年间规律性出错 2100年3月1日-2200年2月28日 全部向后推移一天 2200年3月1日-2300年2月28日 全部向后推移两天 2300年3月1日-2500年2月28日 全部向后推移三天 2500年3月1日-2500年12月31日 全部向后推移四天</li>
+<li>不断进行同一年连续测试时可能会导致死循环</li>
 </ol>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<h3 id="猜测bug原因">猜测bug原因</h3>
+<h2 id="猜测bug原因">猜测bug原因</h2>
 <ol type="1">
 <li>没有进行类型判断，并没有处理整型以外的类型，导致读入错误进入死循环</li>
 <li>没有进行日期的下界判断，导致没有报错正常输出</li>
 <li>只进行了mod 4的判断但没有进行mod 10和mod 1000的判断，一律视为闰年</li>
 </ol>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <ol start="4" type="1">
-<li>开始觉得是世纪闰年导致，毕竟这个年份和日期具有规律性。但是如果单纯是周年闰年，那么应该后面日期全部出错，现在只有50%错误率，非常奇怪。可能程序还带有某种校准机制？不然就是人为故意的错误。</li>
+<li>由于世纪闰年错误导致的整体平移，并且2100-2500年间错误率为100%，整百年2月到3月的错误平移明显和2月29日有关。</li>
+<li>排查发现应该是csv文件中最后隐藏空行带了某种符号，而这种符号不符合findday的输入规范，因此和非整型输入一样开始死循环。最后处理方法是生成数据时多拉一行，再删除（下方单元格上移），就不再会死循环。</li>
 </ol>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<h3 id="不足之处">不足之处</h3>
+<h2 id="不足之处">不足之处</h2>
 <ol type="1">
 <li>初始的28年计算显得多此一举。实际上这个实验，回溯算法并没有很好的效果</li>
 <li>随机算法随机性比较大，还是不能完全排除遗漏的错误可能（比如再1900-2100年间）</li>
-<li>最后单独分析年份的时候是取的每一百年的头尾，因为猜测是百年计更改的输出，但是不排除可能这中间的年份并不是这个规律。</li>
-</ol>
-</section>
-<section class="slide level2">
-
-<ol start="4" type="1">
+<li>最后单独分析年份的时候是取的百年，因为猜测是百年计更改的输出，但是不排除可能这中间的年份并不是这个规律。</li>
 <li>测试工程量还是比较大，实际上我是在手动进行数据的筛选工作，而更理想的情况是我们把这个也编入脚本，由脚本来进行筛选，这样效率更高，准确率也更高。</li>
-<li>实际上查资料发现一般万年历是从1900年1月1日为周一开始计算的，但是excel实际上是周日，而且1900年被认为是闰年，巧合的是这个软件也这么认为了。所以说我这一段是全pass的，但如果是从按照一般万年历，应该从1900年1月1日到1900年2月28日的结果都是有误的，直到3月1日恢复正常。</li>
 </ol>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<ol start="6" type="1">
+<ol start="5" type="1">
+<li>实际上查资料发现一般万年历是从1900年1月1日为周一开始计算的，但是excel实际上是周日，而且1900年被认为是闰年，巧合的是这个软件也这么认为了。所以说我这一段是全pass的，但如果是从按照一般万年历，应该从1900年1月1日到1900年2月28日的结果都是有误的，直到3月1日恢复正常。</li>
 <li>脚本是在linux下运行的，但是手动是在windows下进行的，实际上可能这两个平台上会有差异。</li>
+<li>脚本本身也可能存在错误。一开始判断比较结果是用了&lt;,为了处理末尾的“.”,但是这样的结果会变成50%的错误率，非常匪夷所思。改成=判断之后，就一切正常了。</li>
 </ol>
 </section>
-<section id="补充说明" class="slide level2">
-<h2>补充说明</h2>
+<section id="补充说明" class="slide level1">
+<h1>补充说明</h1>
 <p>除了文档外所有的包括脚本、数据、错误输出等文件全部打包 文件架构如下：</p>
 <pre><code>SoftwareTest_findday
 ├─reveal.js
 ├─test_data
 │  ├─test_2100
-│  ├─test_2199
 │  ├─test_2202
-│  ├─test_2299
 │  ├─test_2300
-│  ├─test_2325
 │  ├─test_2400
-│  ├─test_2499
 │  ├─test_2500
 │  ├─test_all
 │  ├─test_random1
@@ -479,13 +514,9 @@ done
 │  └─test_random5
 ├─test_result
 │  ├─diffline_2100
-│  ├─diffline_2199
-│  ├─diffline_2202
-│  ├─diffline_2299
+│  ├─diffline_2200
 │  ├─diffline_2300
-│  ├─diffline_2325
 │  ├─diffline_2400
-│  ├─diffline_2499
 │  ├─diffline_2500
 │  ├─diffline_random1
 │  ├─diffline_random3
@@ -504,12 +535,12 @@ done
 └─README.md
 </code></pre>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>使用说明：由于测试的时候并没有分文件夹全都在一个目录下，因此如果要测试数据需要在写表名时加上path。</p>
 <p>my_presentation和reveal.js必须在同一目录下才能正常播放</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 </section>
     </div>

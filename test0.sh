@@ -2,13 +2,23 @@
 #! /bin/sh
 cat $1.csv | awk -F, '{ print $1; }' > test_in.txt
 cat $1.csv | awk -F, '{ print $2; }' > test_out.txt
+
+    if [  -f "test_result.txt" ];
+    then
+        rm test_result.txt
+    fi
 ##生成对应的测试文件输入和输出
 #i=0;
 cat test_in.txt | while read str_in #逐行获取输入
 do
     output=`./test.out $str_in >> test_temp.txt 2>&1`
 done
-cat test_temp.txt | grep "The" >test_result.txt
+cat test_temp.txt | grep "The Day" | while read str
+do
+    echo ${str%%.} >> test_result.txt 2>&1
+done
+
+
 
     if [  -f "test_temp.txt" ];
     then
@@ -34,7 +44,7 @@ cat test_temp.txt | grep "The" >test_result.txt
     sed -n ${i}p test_in.txt | while read str_in
     do
     #echo $output
-    if [ "$reference" \< "$result" ]
+    if [ "$reference" \= "$result" ]
         then
         echo "[$i]PASS!!!!!!"
         echo "[$i]$str_in reference:$reference" >> sameline.txt

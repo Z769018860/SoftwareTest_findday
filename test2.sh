@@ -1,6 +1,13 @@
 
 #! /bin/sh
-    cat terminal.txt | grep "The" >test_result.txt
+cat terminal.txt | grep "The Day" | while read str
+do
+    echo ${str%%.} >> test_result.txt
+done
+    if [  -f "test_temp.txt" ];
+    then
+        rm test_temp.txt
+    fi
     if [  -f "diffline.txt" ];
     then
         rm diffline.txt
@@ -21,7 +28,7 @@
     sed -n ${i}p test_in.txt | while read str_in
     do
     #echo $output
-    if [ "$reference" \< "$result" ]
+    if [ "$reference" \= "$result" ]
         then
         echo "[$i]PASS!!!!!!"
         else
